@@ -1,0 +1,170 @@
+/* General Black-Themed Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Smooth Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Form Styling */
+form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.8s ease-out;
+}
+
+input, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    margin: 20px auto;
+    width: 80%;
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #1e1e1e;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+    border-color: #ff4081;
+    box-shadow: 0px 0px 8px rgba(255, 64, 129, 0.8);
+}
+
+/* Input Effects */
+input:focus {
+    border: 2px solid #ff4081;
+    box-shadow: 0px 0px 10px rgba(255, 64, 129, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Effects */
+button {
+    background: linear-gradient(90deg, #ff4081, #f50057);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #f50057, #ff4081);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* File List Styling */
+.file-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.file-list li {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.file-list li:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.03);
+}
+
+/* Dynamic Text Highlighting */
+.highlight {
+    color: #ff4081;
+}
+
+/* Logout Button */
+.logout {
+    margin: 30px auto;
+}
+
+.logout button {
+    background: crimson;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.logout button:hover {
+    background: red;
+    transform: scale(1.1);
+}
+a {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a[style*="crimson"] {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+a[style*="crimson"]:hover {
+    color: white;
+    background: crimson;
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.4);
+}
